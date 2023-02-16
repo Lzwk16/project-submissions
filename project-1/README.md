@@ -91,6 +91,8 @@ From this study, we can possibly expand the research towards other environment o
 
 2. Incorporating pollutant metrics that are strongly associated with climate change such the emission of common greenhouse gasses(Carbon dioxide, Methane) to see how they can affect seafood catches in wild fisheries and harvests from local fish farms 
 
+3. Quantify the relationship between the sales of different seafood sub-types, and also analyse how the different prices of various seafoods can vary with respect to weather parameters.
+
 
 ## Sources and Citations
 
