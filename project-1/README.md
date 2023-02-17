@@ -113,3 +113,5 @@ https://www.channelnewsasia.com/singapore/climate-change-singapore-food-producti
 7. National Geographic: Hydrologic Cycle: https://education.nationalgeographic.org/resource/hydrologic-cycle
 
 8. What are Phytoplankton? NASA Earth Observatory: https://earthobservatory.nasa.gov/features/Phytoplankton
+
+9. Singapore food statistics 2021: https://www.sfa.gov.sg/docs/default-source/publication/sg-food-statistics/singapore-food-statistics-2021.pdf 
