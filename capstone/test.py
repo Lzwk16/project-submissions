@@ -1,8 +1,6 @@
 import pandas as pd
 import streamlit as st
 import sklearn
-import nltk
-import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from scipy.sparse import csr_matrix
 from sklearn.metrics.pairwise import cosine_similarity
