@@ -31,8 +31,8 @@ The main datasets (recommendations, games, metadata and users) will be primarily
 |user_id|int|users.csv, receommendations.csv| Unique user id of player|
 
 **Features used in games.csv**
-|---|---|---|---|
 |Feature|Type|Dataset|Description|
+|---|---|---|---|
 |date_release|string|games.csv|Product release date|
 |win|boolean|games.csv|Windows compatibility|
 |mac|boolean|games.csv|Mac compatibility|
@@ -45,8 +45,8 @@ The main datasets (recommendations, games, metadata and users) will be primarily
 |steam_deck|boolean|games.csv|Steam console compatibility|
 
 **Features used in recommendations.csv**
-|---|---|---|---|
 |Feature|Type|Dataset|Description|
+|---|---|---|---|
 |helpful|int|recommendations.csv|no of users who found recommendation helpful|
 |funny|int|recommendations.csv|no of users who found recommendation funny|
 |date|string|recommendations.csv|date of review|
@@ -55,14 +55,14 @@ The main datasets (recommendations, games, metadata and users) will be primarily
 |review_id|int|recommendations.csv|unique review id of review|
 
 **Features used in users.csv**
-|---|---|---|---|
 |Feature|Type|Dataset|Description|
+|---|---|---|---|
 |products|int|users.csv|no. of products in user's steam library|
 |reviews|int|users.csv|Number of reviews published|
 
 **Features used in app_list.csv**
-|---|---|---|---|
 |Feature|Type|app_list|Description|
+|---|---|---|---|
 |average_forever|int|app_list|Permament average playtime(mins)|
 |average_2weeks|int|app_list|average playtime in last 2 weeks(mins)|
 |median_forever|int|app_list|Permament median playtime(mins)|
