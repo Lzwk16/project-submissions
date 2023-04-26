@@ -6,7 +6,7 @@ from scipy.sparse import csr_matrix
 from sklearn.metrics.pairwise import cosine_similarity
 
 
-
+import io
 
 # Add the Steam icon image
 
