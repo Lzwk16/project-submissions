@@ -21,7 +21,7 @@ if uploaded_file is not None:
     file_contents = uploaded_file.read()
     
     # Convert the bytes object to a pandas DataFrame
-    games = pd.read_parquet(file_contents)
+    games = pd.read_parquet(io.BytesIO(file_contents))
 else:
     # If no file was uploaded, use a default database file
     games = pd.read_parquet("Bigclip.pq")
