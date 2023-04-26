@@ -6,7 +6,12 @@ from scipy.sparse import csr_matrix
 from sklearn.metrics.pairwise import cosine_similarity
 
 
+import os
 
+if os.path.exists('Bigclip.pq'):
+    print('File exists!')
+else:
+    print('File does not exist.')
 
 
 
