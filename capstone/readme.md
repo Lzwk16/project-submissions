@@ -31,6 +31,7 @@ The main datasets (recommendations, games, metadata and users) will be primarily
 |user_id|int|users.csv, receommendations.csv| Unique user id of player|
 
 **Features used in games.csv**
+|---|---|---|---|
 |Feature|Type|Dataset|Description|
 |date_release|string|games.csv|Product release date|
 |win|boolean|games.csv|Windows compatibility|
@@ -44,6 +45,7 @@ The main datasets (recommendations, games, metadata and users) will be primarily
 |steam_deck|boolean|games.csv|Steam console compatibility|
 
 **Features used in recommendations.csv**
+|---|---|---|---|
 |Feature|Type|Dataset|Description|
 |helpful|int|recommendations.csv|no of users who found recommendation helpful|
 |funny|int|recommendations.csv|no of users who found recommendation funny|
@@ -53,11 +55,13 @@ The main datasets (recommendations, games, metadata and users) will be primarily
 |review_id|int|recommendations.csv|unique review id of review|
 
 **Features used in users.csv**
+|---|---|---|---|
 |Feature|Type|Dataset|Description|
 |products|int|users.csv|no. of products in user's steam library|
 |reviews|int|users.csv|Number of reviews published|
 
 **Features used in app_list.csv**
+|---|---|---|---|
 |Feature|Type|app_list|Description|
 |average_forever|int|app_list|Permament average playtime(mins)|
 |average_2weeks|int|app_list|average playtime in last 2 weeks(mins)|
@@ -81,21 +85,21 @@ Content filtering models are usually evaluated through similarity metrics by det
 
 | **Model No.**| **Model** | **RMSE** |
 | --- | --- | ---|
-| 1 | Random Predictor (Baseline) | 1.443 |
-| 2 | Baseline Estimate(Optimised ALS) | 0.983 |
+| 1 | Random Predictor (Baseline) | 1.444 |
+| 2 | Baseline Estimate | 0.985 |
 | 3 | **SVD (Matrix Factorization)** | 0.984 |
-| 4 | SVD++ (Matrix Factorization) | 0.984 |
+| 4 | SVD++ (Matrix Factorization) | 0.981 |
 | 5 | SlopeOne | 1.009 |
-| 6 | Co-Clustering | 1.120 |
+| 6 | Co-Clustering | 1.119 |
 
 | **Model No.**| **Model** | **Precision@10** | **Recall@10** |
 | --- | --- | ---| ---|
-| 1 | Random Predictor (Baseline) | 0.762 | 0.772 |
-| 2 | Baseline Estimate(Optimised ALS) | 0.802 | 0.944 |
-| 3 | **SVD (Matrix Factorization)** | 0.802 | 0.944 |
-| 4 | SVD++ (Matrix Factorization) | 0.802 | 0.943 |
-| 5 | SlopeOne | 0.799 | 0.928 |
-| 6 | Co-Clustering | 0.779 | 0.794 |
+| 1 | Random Predictor (Baseline) | 0.454 | 0.505 |
+| 2 | Baseline Estimate | 0.559 | 0.730 |
+| 3 | **SVD (Matrix Factorization)** | 0.557 | 0.734 |
+| 4 | SVD++ (Matrix Factorization) | 0.558 | 0.735 |
+| 5 | SlopeOne | 0.537 | 0.691 |
+| 6 | Co-Clustering | 0.435 | 0.443 |
 
 
 We can see that the performances of the matrix factorization based models and baseline optiimsed ALS using regularization models have similar performance where they scored similar RMSE of 0.98, Precision@10 of 0.802 and Recall@10 of 0.944. 
