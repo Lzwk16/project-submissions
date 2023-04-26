@@ -1,0 +1,4 @@
+streamlit
+numpy
+pandas==1.5.3
+sklearn==1.2.2
