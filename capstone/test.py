@@ -12,19 +12,8 @@ import io
 
 
 st.set_page_config(page_title = "GiantClip", page_icon = "🎮")
-# Create a file uploader widget
-uploaded_file = st.file_uploader("Choose your database", accept_multiple_files=False)
 
-# Check if a file was uploaded
-if uploaded_file is not None:
-    # Read the contents of the file as a bytes object
-    file_contents = uploaded_file.read()
-    
-    # Convert the bytes object to a pandas DataFrame
-    games = pd.read_parquet(io.BytesIO(file_contents))
-else:
-    # If no file was uploaded, use a default database file
-    games = pd.read_parquet("Bigclip.pq")
+games = pd.read_parquet("Bigclip.pq")
 st.session_state.page = 0
 def get_recommendations(game_profile, selected_genres=None, games=None):
     
