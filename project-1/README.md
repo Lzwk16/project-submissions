@@ -71,6 +71,8 @@ Singapore is a small tropical island nation surrounded by coastlines in all dire
 
 8. Having a higher relative mean humidity indicates that more seafood for consumption is being sold at fishery ports throughout the time period from 1982 - 2022. This can possibly suggest that certain groups of seafood sold in the fisheries can thrive under high humidity
 
+Key weather temporal trends of Singapore have been updated and deployed onto Tableau Public Dashboard: [Singapore's Weather Data from 1982-2022](https://public.tableau.com/app/profile/kenneth.lim7576/viz/GAProject1DashboardKenneth/Dashboard1)
+
 ## Conclusions and Recommendations
 ---
 *Conclusion
