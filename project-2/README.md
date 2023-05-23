@@ -13,11 +13,15 @@ The project is broken up into 2 parts. Part 1 of the notebook code will involve 
 5. ScikitLearn (part 2 of the notebook)
 6. statsmodel.api
 
+## Data Visualisations
+
+Key housing metrics on Singapore's HDB resale flats have been updated and deployed nto Tableau Public Dashboard: [Singapore's HDB Resale Flats Price 2012-2021](https://public.tableau.com/app/profile/kenneth.lim7576/viz/GAProject2Dashboard/HDBdashbaord#1)
+
 ## Problem Statement
 
 - In Singapore, getting a HDB is probably one of the biggest financial decisions many Singaporeans will have to make, given its exhorbitant cost. Furthermore, given the fluctuating property prices in the market throughout the recent decade as a result several cooling measures and increasing demand, making a wrong decision could set one back several years in terms of opportunity cost & time value of money. As a Data Scientist employed by an online social networking service headquarterd in Singapore, our team has been requested by the management to design a predictive model that can help property and housing agents in the market to offer prediction services of HDB resale prices, so that they can offer informed consulting advice to their clients.
 
-- In this project, we seek to build a Linear Regression model and evaluate its feasibility in predicting the housing prices of HDB resale flats in Singapore through the selection of several key features, so as to help Singaporeans make more informed decisions on the different types of resale flats available in the property market. We will be basing the criteria metric by aiming for a high R2(R-square) score and low RMSE(Root-Mean Sqaure) score so as to minimise the error cost during the prediction of HDB resale prices in order to reduce the amount of financial errors that clients can incur.
+- In this project, we seek to build a Linear Regression model and evaluate its feasibility in predicting the housing prices of HDB resale flats in Singapore through the selection of several key features, so as to help Singaporeans make more informed decisions on the different types of resale flats available in the property market. We will be basing the criteria metric by aiming for a low RMSE(Root-Mean Sqaure) score so as to minimise the error cost during the prediction of HDB resale prices in order to reduce the amount of financial errors that clients can incur.
 
 ## Conclusion
 
