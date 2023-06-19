@@ -2,7 +2,7 @@
 
 In this project, we are tasked to built a Linear Regression Model to predict the HDB resale prices for Project 2 Regression on challenge in Kaggle. The dataset can be found in this link [Dataset](https://www.kaggle.com/competitions/dsi-sg-project-2-regression-challenge-hdb-price/data)
 
-The project is broken up into 2 parts. Part 1 of the notebook code will involve data cleaning, exploratory data analysis and feature engineering. Part 2 of the notebook code will involve mainly on model selection, model preprocessing, model and feature selection.
+The project is broken up into 2 parts. Part 1 of the notebook code will involve data cleaning, exploratory data analysis and feature engineering. Part 2 of the notebook code will involve conceptualising through model selection, model preprocessing, model and feature selection. Part 3 of the notebook code will involve the final analysis and selection of key features for model deployment
 
 ## Python Libraries
 
@@ -10,7 +10,9 @@ The project is broken up into 2 parts. Part 1 of the notebook code will involve 
 2. Numpy
 3. Matplotlib
 4. Seaborn
-5. ScikitLearn (part 2 of the notebook)
+5. ScikitLearn (part 2, 3 of the notebook)
+6. XGBoost (part 3 of notebook)
+7. Streamlit (Model deployment)
 
 ## Data Visualisations
 
