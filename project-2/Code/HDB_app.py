@@ -31,9 +31,7 @@ else:
     Mature_Estate = 0
 
 if st.button('Predict'):
-    url = 'https://github.com/Lzwk16/project-submissions/blob/main/project-2/Code/HDB_model_final.joblib'
-    response = requests.get(url)
-    model = joblib.load(response.content)
+    model = joblib.load('HDB_model_final.joblib')
     x = pd.DataFrame([[floor_area_sqm, remaining_lease, mid, max_floor_lvl, flat_type, town, Mature_Estate, mrt_nearest_distance]], 
                      columns=['floor_area_sqm', 'remaining_lease', 'mid', 'max_floor_lvl', 'flat_type', 'town', 'Mature_Estate',  'mrt_nearest_distance'])
     pred = model.predict(x)[0]
