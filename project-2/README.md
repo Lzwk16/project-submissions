@@ -46,7 +46,6 @@ Although the Random Forest model had the lowest RMSE, it is not robust towards u
 | mrt_nearest_distance | distance (in metres) to the nearest MRT station |
 | flat_type | type of the resale flat unit, e.g. 3 ROOM |
 | mid | middle value of storey_range |
-| flat_model | HDB model of the resale flat, e.g. Multi Generation |
 
 ## Conclusion
 
