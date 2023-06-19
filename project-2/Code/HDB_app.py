@@ -4,7 +4,6 @@ import numpy as np
 import joblib
 import requests
 import os
-print(os.getcwd())
 
 st.title('Personalised Singapore HDB Resale Price Predictor')
 
@@ -32,9 +31,9 @@ else:
     Mature_Estate = 0
 
 if st.button('Predict'):
-    st.write(os.getcwd())
-    #model = joblib.load('HDB_model_final.joblib')
-    #x = pd.DataFrame([[floor_area_sqm, remaining_lease, mid, max_floor_lvl, flat_type, town, Mature_Estate, mrt_nearest_distance]], 
-                     #columns=['floor_area_sqm', 'remaining_lease', 'mid', 'max_floor_lvl', 'flat_type', 'town', 'Mature_Estate',  'mrt_nearest_distance'])
-    #pred = model.predict(x)[0]
-    #st.markdown(f'### Predicted Resale Price of your HDB Flat is ${str(int(round(pred, -3)))}')
+    model_path = os.path.join(os.getcwd(), 'HDB_model_final.joblib')
+    model = joblib.load(model_path)
+    x = pd.DataFrame([[floor_area_sqm, remaining_lease, mid, max_floor_lvl, flat_type, town, Mature_Estate, mrt_nearest_distance]], 
+                     columns=['floor_area_sqm', 'remaining_lease', 'mid', 'max_floor_lvl', 'flat_type', 'town', 'Mature_Estate',  'mrt_nearest_distance'])
+    pred = model.predict(x)[0]
+    st.markdown(f'### Predicted Resale Price of your HDB Flat is ${str(int(round(pred, -3)))}')
