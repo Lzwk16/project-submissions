@@ -31,7 +31,8 @@ else:
     Mature_Estate = 0
 
 if st.button('Predict'):
-    model_path = os.path.join(os.getcwd(), 'HDB_model_final.joblib')
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(script_dir, 'HDB_model_final.joblib')
     model = joblib.load(model_path)
     x = pd.DataFrame([[floor_area_sqm, remaining_lease, mid, max_floor_lvl, flat_type, town, Mature_Estate, mrt_nearest_distance]], 
                      columns=['floor_area_sqm', 'remaining_lease', 'mid', 'max_floor_lvl', 'flat_type', 'town', 'Mature_Estate',  'mrt_nearest_distance'])
