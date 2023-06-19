@@ -1,12 +1,12 @@
 import pandas as pd
 import streamlit as st
 import sklearn
+import requests
+import os
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from scipy.sparse import csr_matrix
 from sklearn.metrics.pairwise import cosine_similarity
 
-
-import io
 
 # Add the Steam icon image
 
