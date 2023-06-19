@@ -54,7 +54,7 @@ In summary, we have sucessfully managed to successfully construct a Simple Regre
 
 ## Model Deployment
 
-The final model has been deployed onto streamlit cloud at the following link: (Singapore HDB price predictor)[https://lzwk16-project-submissions-project-2codehdb-app-ppi023.streamlit.app]
+The final model has been deployed onto streamlit cloud at the following link: [Singapore HDB price predictor](https://lzwk16-project-submissions-project-2codehdb-app-ppi023.streamlit.app)
 
 ## Future Work
 
