@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 import joblib
 import requests
-
+import os
+print(os.getcwd())
 
 st.title('Personalised Singapore HDB Resale Price Predictor')
 
