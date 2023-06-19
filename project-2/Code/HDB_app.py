@@ -32,7 +32,7 @@ else:
     Mature_Estate = 0
 
 if st.button('Predict'):
-    print(os.getcwd())
+    st.write(os.getcwd())
     #model = joblib.load('HDB_model_final.joblib')
     #x = pd.DataFrame([[floor_area_sqm, remaining_lease, mid, max_floor_lvl, flat_type, town, Mature_Estate, mrt_nearest_distance]], 
                      #columns=['floor_area_sqm', 'remaining_lease', 'mid', 'max_floor_lvl', 'flat_type', 'town', 'Mature_Estate',  'mrt_nearest_distance'])
