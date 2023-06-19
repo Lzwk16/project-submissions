@@ -12,8 +12,9 @@ import io
 
 
 st.set_page_config(page_title = "GiantClip", page_icon = "🎮")
-
-games = pd.read_parquet("Bigclip.pq")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'Bigclip.pq')
+games = pd.read_parquet(file_path)
 st.session_state.page = 0
 def get_recommendations(game_profile, selected_genres=None, games=None):
     
@@ -23,7 +24,7 @@ def get_recommendations(game_profile, selected_genres=None, games=None):
         game_profile += ', '.join(genres_lower)
 
     if games is None:
-        games = pd.read_parquet('Bigclip.pq')
+        games = pd.read_parquet(file_path)
         
     # Convert the game profile to a sparse matrix using TfidfVectorizer
     tfidf = TfidfVectorizer()
