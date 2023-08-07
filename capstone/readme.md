@@ -102,7 +102,7 @@ Content filtering models are usually evaluated through similarity metrics by det
 | 6 | Co-Clustering | 0.435 | 0.443 |
 
 
-We can see that the performances of the matrix factorization based models and baseline estimate using regularization models have similar performance where they scored similar RMSE between 0.981-0.985, Precision@10 between 0.730 - 0.735 and Recall@10 of 0.577-0.559. The recall@10 scores are significantly higher than precision@10, as this aligns well with the goal of our initial objective which is to provide a comprehensive list of relevant game titles among the wide diversity of popular game titles to users. Hence, we will be prioritising this metric to be used for evaluating our selected model.
+We can see that the performances of the matrix factorization based models and baseline estimate using regularization models have similar performance where they scored similar RMSE between 0.981-0.985, Recall@10 between 0.730 - 0.735 and Precision@10 of 0.577-0.559. The recall@10 scores are significantly higher than precision@10, as this aligns well with the goal of our initial objective which is to provide a comprehensive list of relevant game titles among the wide diversity of popular game titles to users. Hence, we will be prioritising this metric to be used for evaluating our selected model.
 
 Considering the scope of our project and these scores, our final selected model will be the SVD algorithm due its simpler interpretability, as well as requiring less computational power and being able to identify possible hidden latent features that can affect the playtime derived ratings while compared to the baseline estimate model.
 
